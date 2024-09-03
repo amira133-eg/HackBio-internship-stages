@@ -7,7 +7,7 @@ How to install Packages in R
 
 ###Introduction 
 
-Before that, we ask ourselves how we know the rise and fall in the expression of a breast tumor, and how the programming language R makes it easier for us to understand different gene expression?
+Before that, we ask ourselves how we know the up and down regulations in the expression of a breast tumor, and how the programming language R makes it easier for us to understand different gene expression?
 First we know what is
  Packages are a group of functions that play important roles in different data types
 ( packages \= more than function \= make an action )
