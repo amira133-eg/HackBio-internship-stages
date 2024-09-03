@@ -73,6 +73,14 @@ By analyzing gene expression data from breast cancer samples, researchers can ga
 
 ###references
 
+https://typeset.io/papers/r-scripts-for-user-friendly-deseq2-rna-seq-differential-dvy5hp5zer
+
+
+https://typeset.io/papers/geoquery-a-bridge-between-the-gene-expression-omnibus-geo-3ouivdf51q
+
+
+https://typeset.io/papers/ggplantmap-an-open-source-r-package-for-the-creation-of-33is7as4xm
+
 Case Study: GEO Data: GSE18864 - Breast Cancer RNA-Seq Data
 
 DOWNLOAD DESeq2 package:                  https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html 
