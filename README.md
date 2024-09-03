@@ -40,7 +40,7 @@ McDermaid, A., Monier, B., Zhao, J., Liu, B., Ma, Q. [Interpretation of differen
 
 Taub F, DeLeo J, Thompson EB (1983) Sequential comparative hybridizations analyzed by computerized image processing can identify and quantitate regulated RNAs. DNA 2(4):309–327
 
-[Article](https://doi.org/10.1089%2Fdna.1983.2.309) **[CAS](https://link.springer.com/articles/cas-redirect/1%3ACAS%3A528%3ADyaL2cXmsVCktg%253D%253D) [Google Scholar](https://scholar.google.com/scholar\_lookup?\&title=Sequential%20comparative%20hybridizations%20analyzed%20by%20computerized%20image%20processing%20can%20identify%20and%20quantitate%20regulated%20RNAs\&journal=DNA\&volume=2\&issue=4\&pages=309-327\&publication\_year=1983\&author=Taub%2CF\&author=DeLeo%2CJ\&author=Thompson%2CEB)
+[Article](https://doi.org/10.1089%2Fdna.1983.2.309) [CAS](https://link.springer.com/articles/cas-redirect/1%3ACAS%3A528%3ADyaL2cXmsVCktg%253D%253D) [Google Scholar](https://scholar.google.com/scholar\_lookup?\&title=Sequential%20comparative%20hybridizations%20analyzed%20by%20computerized%20image%20processing%20can%20identify%20and%20quantitate%20regulated%20RNAs\&journal=DNA\&volume=2\&issue=4\&pages=309-327\&publication\_year=1983\&author=Taub%2CF\&author=DeLeo%2CJ\&author=Thompson%2CEB)
 
 American Cancer Society. (2022, March 1).  
 Survival Rates for Breast Cancer. AmericanCancerSociety. [https://www.cancer.org/cancer/breast-cancer/understanding-a-breast-cancer-diagnosis/breast-cancer-survival-rates.html](https://www.cancer.org/cancer/breast-cancer/understanding-a-breast-cancer-diagnosis/breast-cancer-survival-rates.html)
