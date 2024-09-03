@@ -43,6 +43,11 @@ for example 2 ,The **`GEOquery` package** in R is crucial for breast cancer rese
 
 https://typeset.io/papers/r-scripts-for-user-friendly-deseq2-rna-seq-differential-dvy5hp5zer
 
+https://typeset.io/papers/geoquery-a-bridge-between-the-gene-expression-omnibus-geo-3ouivdf51q
+
+
+https://typeset.io/papers/ggplantmap-an-open-source-r-package-for-the-creation-of-33is7as4xm
+
 
 **Case Study**: [GEO Data: GSE18864 \- Breast Cancer RNA-Seq Data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18864)
 
