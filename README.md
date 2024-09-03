@@ -1,7 +1,11 @@
 # Stage-0-
  Learning Track : Frontend Bioinformatics    ( How to install packages in R )
+
+Authors (@slack): Amira Mahmoud Mohamed (amira_mahmoud_4463)
   
 How to install Packages in R
+
+Introduction 
 
 Before that, we ask ourselves how we know the rise and fall in the expression of a breast tumor, and how the programming language R makes it easier for us to understand different gene expression?
 First we know what is
@@ -10,6 +14,8 @@ First we know what is
 Secondly, packages are created from outside the r base, so they are created from a source outside   
 Such as CRANA, BIOCONDUCTOR, GITHUB We have more than method to install packages  
 Let's expand on it
+
+
 
 How to install Packages in R 
 
@@ -45,28 +51,22 @@ how to install r packages from bioconductor
 
     install.packages("BiocManager")
 
- 
-
 BiocManager::install("GEOquery")
 
  
-
 4- open R studio and past then run
 
 5-bioconductor::install("package name")
 
 6- The package is installed contain more than function
 
+
  
+Conclusion and its Importantce in cancer
 
 For example we can install DESeq2 package from Bioconductor for differential gene expression analysis from count data, and
-
 The package provides a robust workflow for RNA-Seq data analysis, including normalization to account for differences in sequencing depth, statistical testing for differential expression, and visualization tools for results
-
 In breast cancer research, the DESeq2 package plays a crucial role in analyzing RNA-Seq data to understand gene expression patterns, identify potential biomarkers, and gain insights into the underlying mechanisms of the disease. Here’s why DESeq2 is particularly important in the context of breast cancer research
-
- 
-
 By analyzing gene expression data from breast cancer samples, researchers can gain insights into the molecular mechanisms driving tumor development and progression. Differential expression analysis helps identify pathways and processes that are altered in breast cancer
 
  
