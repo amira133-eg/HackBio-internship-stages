@@ -1,11 +1,11 @@
-# Stage-0-
+ #Hackbio_Stage 0
  Learning Track : Frontend Bioinformatics    ( How to install packages in R )
 
 Authors (@slack): Amira Mahmoud Mohamed (amira_mahmoud_4463)
   
 How to install Packages in R
 
-Introduction 
+###Introduction 
 
 Before that, we ask ourselves how we know the rise and fall in the expression of a breast tumor, and how the programming language R makes it easier for us to understand different gene expression?
 First we know what is
@@ -17,9 +17,9 @@ Let's expand on it
 
 
 
-How to install Packages in R 
+###How to install Packages in R 
 
- crna packages How to download them
+ crna packages How to download packages from CRAN
 
 1- Search for crna packages from Google
 
@@ -35,11 +35,11 @@ How to install Packages in R
 
 6- You can see the functions in the package
 
-example for dowenloaded package from CRNA (ggplot2) to visualize relationships between different genes or between gene expression levels and other variables and for visualizing differential expression results, where you plot fold changes against significance levels
+#example for dowenloaded package from CRNA (ggplot2) to visualize relationships between different genes or between gene expression levels and other variables and for visualizing differential expression results, where you plot fold changes against significance levels
 
 Another way with us
 
-how to install r packages from bioconductor
+###how to install r packages from bioconductor
 
 1- Search on Google for bioconductor packages
 
@@ -62,7 +62,7 @@ BiocManager::install("GEOquery")
 
 
  
-Conclusion and its Importantce in cancer
+###Conclusion and its Importantce in cancer
 
 For example we can install DESeq2 package from Bioconductor for differential gene expression analysis from count data, and
 The package provides a robust workflow for RNA-Seq data analysis, including normalization to account for differences in sequencing depth, statistical testing for differential expression, and visualization tools for results
