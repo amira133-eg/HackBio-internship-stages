@@ -2,10 +2,7 @@
 
 Authors (@slack): Amira Mahmoud Mohamed (amira_mahmoud_4463)
 
-### Introduction
-
-
-   Before delving into the topic, we should ask ourselves .How can we identify the up-regulated and down-regulated gene expressions in a breast tumor?, and how the R programming language facilitates our understanding of different gene expressions
+Before delving into the topic, we should ask ourselves .How can we identify the up-regulated and down-regulated gene expressions in a breast tumor?, and how the R programming language facilitates our understanding of different gene expressions
 
 First, let’s define what packages are. Packages in R are collections of functions that play important roles in handling different types of data
 
@@ -14,7 +11,6 @@ First, let’s define what packages are. Packages in R are collections of functi
 Secondly, packages are created outside of the R base, meaning they originate from external sources such as CRAN, Bioconductor, and GitHub. There are several methods to install these packages. Let’s explore them.
 
 
-### Basic Body 
 
 ### **How to install R packages from CRAN**
 
@@ -36,9 +32,8 @@ Secondly, packages are created outside of the R base, meaning they originate fro
 
 ### After installing the package, open RStudio, paste the installation command, and run it. To load the package, use the `library` function with the package name. For instance, `library(GEOquery)` will load the `GEOquery` package. The package will contain more than one function for application
 
-### 
 
-### **Conclusion (it relates to cancer)**
+
 
 ### For example, the **`DESeq2` package** from Bioconductor is used for differential gene expression analysis from count data. This package provides a robust workflow for RNA-Seq data analysis, including normalization to account for differences in sequencing depth, statistical testing for differential expression, and visualization tools for results. In breast cancer research, the `DESeq2` package plays a crucial role in analyzing RNA-Seq data to understand gene expression patterns in breast cancer. Certainly, we summarize the importance of The DESeq2 package in R is for breast cancer research because it analyze RNA sequencing data to understand gene expression changes in cancer cells compared to normal cells.This can help us in discovering potential biomarkers and therapeutic targets for treatment. 
 
