@@ -71,6 +71,14 @@ By analyzing gene expression data from breast cancer samples, researchers can ga
 
  
 
+###references
+
+Case Study: GEO Data: GSE18864 - Breast Cancer RNA-Seq Data
+
+DOWNLOAD DESeq2 package:                  https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html 
+
+Download  GEOquery package : https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html
+
  
 
  
