@@ -2,7 +2,9 @@
 
 Authors (@slack): Amira Mahmoud Mohamed (amira_mahmoud_4463)
 
-Introduction
+### Introduction
+
+
    Before delving into the topic, we should ask ourselves .How can we identify the up-regulated and down-regulated gene expressions in a breast tumor?, and how the R programming language facilitates our understanding of different gene expressions
 
 First, let’s define what packages are. Packages in R are collections of functions that play important roles in handling different types of data
@@ -12,7 +14,7 @@ First, let’s define what packages are. Packages in R are collections of functi
 Secondly, packages are created outside of the R base, meaning they originate from external sources such as CRAN, Bioconductor, and GitHub. There are several methods to install these packages. Let’s explore them.
 
 
-Basic Body 
+### Basic Body 
 
 ### **How to install R packages from CRAN**
 
