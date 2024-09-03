@@ -41,6 +41,9 @@ for example 2 ,The **`GEOquery` package** in R is crucial for breast cancer rese
 
 **references**
 
+https://typeset.io/papers/r-scripts-for-user-friendly-deseq2-rna-seq-differential-dvy5hp5zer
+
+
 **Case Study**: [GEO Data: GSE18864 \- Breast Cancer RNA-Seq Data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18864)
 
 **DOWNLOAD DESeq2 package**:                  [https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html](https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html) 
