@@ -1,6 +1,4 @@
-Authors: (@slack):
-
-Amira Mahmoud Mohamed (amira\\mahmoud\\4463)
+Authors: (@slack):Amira Mahmoud Mohamed (amira\\mahmoud\\4463)
 
 Manar Tarek (ManarTj)
 
