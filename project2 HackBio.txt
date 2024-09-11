@@ -1,0 +1,142 @@
+library(shiny)
+
+# Define UI for the application
+ui <- fluidPage(
+  # Add custom CSS
+  tags$head(
+    tags$style(HTML("
+      body {
+        background-color: #f0f8ff; 
+      }
+      .title-panel {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        color: #4b0082; 
+      }
+      .well {
+        background-color: #e6f7ff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .main-panel {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        color: #4b0082;
+        font-family: 'Georgia', serif;
+      }
+      .btn-primary {
+        background-color: #4b0082;
+        border-color: #4b0082;
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: #6a0dad;
+        border-color: #6a0dad;
+      }
+      .shiny-output-error {
+        color: red;
+        font-weight: bold;
+      }
+    "))
+  ),
+  
+  div(
+    titlePanel("Laboratory Calculation Dashboard"), 
+    class = "title-panel"
+  ),
+  
+  # Sidebar layout with input and output panels
+  sidebarLayout(
+    sidebarPanel(
+      class = "well", # Apply CSS to sidebar
+      # Serial Dilution Inputs
+      h3("Serial Dilution Calculator"),
+      numericInput("C0", "Initial Concentration (C₀)", value = 10, step = 0.1),
+      numericInput("Cfinal", "Desired Final Concentration (Cₓ)", value = 1, step = 0.1),
+      numericInput("dilution_factor", "Dilution Factor (DF)", value = 10),
+      numericInput("total_volume", "Total Volume (Vₓ, mL)", value = 100),
+      actionButton("calculate_serial", "Calculate Serial Dilution", class = "btn-primary"),
+      
+      # Stock Solution Dilution Inputs
+      h3("Stock Solution Dilution Calculator"),
+      numericInput("Cstock", "Stock Concentration (Cₛ)", value = 100, step = 0.1),
+      numericInput("Cdesired", "Desired Final Concentration (Cₓ)", value = 10, step = 0.1),
+      numericInput("final_volume", "Final Total Volume (Vₓ, mL)", value = 100),
+      actionButton("calculate_stock", "Calculate Stock Dilution", class = "btn-primary"),
+      
+      # Molarity Calculator Inputs
+      h3("Molarity Calculator"),
+      numericInput("mass", "Mass of Solute (g)", value = 10, step = 0.1),
+      numericInput("molar_mass", "Molar Mass of Solute (g/mol)", value = 180, step = 1),
+      numericInput("solution_volume", "Volume of Solution (L)", value = 1, step = 0.1),
+      actionButton("calculate_molarity", "Calculate Molarity", class = "btn-primary"),
+      
+      # Density Calculator Inputs
+      h3("Solution Density Calculator"),
+      numericInput("mass_solution", "Mass of Solution (g)", value = 100),
+      numericInput("volume_solution", "Volume of Solution (mL)", value = 100),
+      actionButton("calculate_density", "Calculate Density", class = "btn-primary")
+    ),
+    
+    mainPanel(
+      class = "main-panel", # Apply CSS to main panel
+      # Output sections
+      h4("Serial Dilution Result"),
+      verbatimTextOutput("serial_result"),
+      
+      h4("Stock Solution Dilution Result"),
+      verbatimTextOutput("stock_result"),
+      
+      h4("Molarity Result"),
+      verbatimTextOutput("molarity_result"),
+      
+      h4("Solution Density Result"),
+      verbatimTextOutput("density_result")
+    )
+  )
+)
+
+# Define server logic
+server <- function(input, output) {
+  
+  # Serial Dilution Calculation
+  observeEvent(input$calculate_serial, {
+    V_transfer <- (input$C0 * input$total_volume) / (input$Cfinal * input$dilution_factor)
+    output$serial_result <- renderText({
+      paste("Volume to transfer at each step: ", round(V_transfer, 2), "mL")
+    })
+  })
+  
+  # Stock Solution Dilution Calculation
+  observeEvent(input$calculate_stock, {
+    V_stock <- (input$Cdesired * input$final_volume) / input$Cstock
+    V_solvent <- input$final_volume - V_stock
+    output$stock_result <- renderText({
+      paste("Volume of stock solution to add: ", round(V_stock, 2), "mL",
+            "\nVolume of solvent to add: ", round(V_solvent, 2), "mL")
+    })
+  })
+  
+  # Molarity Calculation
+  observeEvent(input$calculate_molarity, {
+    molarity <- input$mass / (input$molar_mass * input$solution_volume)
+    output$molarity_result <- renderText({
+      paste("Molarity: ", round(molarity, 4), "mol/L")
+    })
+  })
+  
+  # Solution Density Calculation
+  observeEvent(input$calculate_density, {
+    density <- input$mass_solution / input$volume_solution
+    output$density_result <- renderText({
+      paste("Density: ", round(density, 4), "g/mL")
+    })
+  })
+}
+
+shinyApp(ui = ui, server = server)
